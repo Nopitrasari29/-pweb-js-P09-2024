@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+#filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#filters label, #filters select {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Product Card Styling */
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product h3 {
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.product p {
+    font-size: 16px;
+    color: #27ae60;
+}
+
+.product button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.product button:hover {
+    background-color: #2980b9;
+}
+
+/* Hover effect on product card */
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Cart Styling */
+#cart {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cartTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cartTable th, #cartTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#cartTable th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+#cartTable td button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#cartTable td button:hover {
+    background-color: #c0392b;
+}
+
+/* Cart summary */
+#cartSummary {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#cartSummary p {
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+#checkoutBtn {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#checkoutBtn:hover {
+    background-color: #2ecc71;
+}
